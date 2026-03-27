@@ -1,18 +1,23 @@
-# Kubernates
-🚀 Kubernetes Basic Commands Cheat Sheet
-🔹 1. Cluster & Context
+# Kubernetes 🚀
+
+## 📌 Kubernetes Basic Commands Cheat Sheet
+
+---
+
+### 🔹 1. Cluster & Context
+```bash
 kubectl cluster-info        # View cluster info
-kubectl config view        # View kubeconfig
+kubectl config view         # View kubeconfig
 kubectl config current-context   # Current context
 kubectl config use-context <context-name>  # Switch context
 🔹 2. Nodes
-kubectl get nodes          # List all nodes
+kubectl get nodes           # List all nodes
 kubectl describe node <node-name>  # Detailed node info
 🔹 3. Pods
-kubectl get pods           # List pods
-kubectl get pods -o wide   # More details
+kubectl get pods            # List pods
+kubectl get pods -o wide    # More details
 kubectl describe pod <pod-name>  # Pod details
-kubectl logs <pod-name>    # View logs
+kubectl logs <pod-name>     # View logs
 kubectl exec -it <pod-name> -- /bin/bash   # Access container
 kubectl delete pod <pod-name>   # Delete pod
 🔹 4. Deployments
